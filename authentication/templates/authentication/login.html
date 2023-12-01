@@ -1,0 +1,38 @@
+
+{% load bootstrap5 %}
+{% load static %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<style>
+    body {
+        background-image: url('https://media.istockphoto.com/id/1458215521/vector/line-icon-set-pattern-for-haute-couture-fashion.jpg?s=612x612&w=0&k=20&c=6WGriZvT6MeEZ0VW2-3ZPbeP0dai-u74v57bvYcCLaI=');
+    }
+</style>
+<link rel="stylesheet" href="{% static 'app.css' %}">
+{% block content %}
+
+<div class="container  mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-10 col-md-10 p-5 login rounder-3">
+            <div class="text-white">
+                <h3>StyleHub <sub>/Login</sub></h3>
+            </div>
+
+            <form method="post" class="form">
+                <p class="alert alert-danger"> {{message}}</p>
+
+                {% csrf_token %}
+
+                {% bootstrap_form form %}
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <p>Not a member? <a href="{% url 'signup' %}">Sign up now!</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}

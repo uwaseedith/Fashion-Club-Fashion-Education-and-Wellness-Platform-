@@ -1,0 +1,103 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="" align="center">
+  <main>
+    <section class="">
+
+      <h2  class="text-muted">Featured Courses</h2>
+
+      <div class="card" style="width: 18rem;">
+        
+        <div class="card-body">
+          <p class="card-text">
+          </p>
+        </div>
+      </div>
+
+
+      <h2 class="text-muted"><strong>1.Fashion Design Courses:</strong></h2>
+
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/model.png' %}" alt="Mentoring" class="card-img-top h-50" alt="...">
+        <div class="card-body">
+          <p class="card-text">
+          <ul class="list-group list-group-flush">
+
+            <li class="list-group-item"><a class="nav-link" href="{% url 'fashion_courses1' %}">Learn to draw fashion
+                with Adobe Illustrator CC - Beginners</a></li>
+            <li class="list-group-item"><a class="nav-link" href="{% url 'fashion_courses2' %}">Look Your VERY best ,
+                Learn about Color, Style & Fashion</a></li>
+            <li class="list-group-item"><a class="nav-link" href="{% url 'fashion_courses3' %}">How To Create A Fashion
+                Collection and Launch Your Own Brand</a></li>
+            <li class="list-group-item">Etc.</li>
+
+          </ul>
+          </p>
+        </div>
+      </div>
+
+
+      <h2  class="text-muted">2.Welness Courses:</h2><br>
+
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/wellness.png' %}" class="card-img-top h-50" alt="...">
+        <div class="card-body">
+          <p class="card-text">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a class="nav-link" href="{% url 'wellness1' %}">Become a Confident & Successful
+                Model with Every Body Shape and Height</a></li>
+            <li class="list-group-item"><a class="nav-link" href="{% url 'wellness2' %}">Top models, top secrets for a
+                fit and healthy body: Fashion Week is here</a></li>
+            <li class="list-group-item">Etc</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+
+     
+
+    </section>
+
+
+
+    <!-- Latest Trends Section -->
+    <section class="latest-trends">
+      <h2  class="text-muted">Latest Trends</h2>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/Trends.png' %}"class="card-img-top h-50" alt="...">
+        <div class="card-body">
+          <p class="card-text">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a class="nav-link" href="{% url 'trends' %}">Showcasing fashion trends and wellness tips</a></li>
+            
+          </ul>
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+      <img src="{% static 'images/Trends.png' %}">
+
+
+      <ul>
+        <li></li>
+
+        <!-- Add trend details here -->
+    </section>
+
+
+    </section>
+  </main>
+</div>
+
+
+
+{% endblock content %}

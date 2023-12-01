@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Modules</h2>
+  {% for module in modules %}
+    <div>
+      <h3>{{ module.title }}</h3>
+      <p>{{ module.content }}</p>
+      <p>Created At: {{ module.created_at }}</p>
+    </div>
+  {% endfor %}
+{% endblock %}

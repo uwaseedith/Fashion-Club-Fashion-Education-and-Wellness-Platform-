@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div class="main-content" align="center">
+    <main>
+        <p class="m-3"><b>Welcome to StyleHub: Fashion Education and Wellness Platform</b></p>
+        <section class="featured-courses">
+            <h2 class="text-muted">Featured Courses</h2>
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/fashion .png' %}" class="card-img-top h-50" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Highlighting current and popular fashion and wellness courses</p>
+                </div>
+            </div>
+
+            <h2 class="text-muted"><strong>1.Fashion Design Courses:</strong></h2>
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/model.png' %}" class="card-img-top h-50" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Learn to draw fashion with Adobe Illustrator CC - Beginners</li>
+                        <li class="list-group-item">Look Your VERY best , Learn about Color, Style & Fashion</li>
+                        <li class="list-group-item">How To Create A Fashion Collection and Launch Your Own Brand</li>
+                        <li class="list-group-item">Etc.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+
+            <h2 class="text-muted">2.Welness Courses</h2><br>
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/wellness.png' %}" class="card-img-top h-50" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Learn to draw fashion with Adobe Illustrator CC - Beginners</li>
+                        <li class="list-group-item">Look Your VERY best , Learn about Color, Style & Fashion</li>
+                        <li class="list-group-item">How To Create A Fashion Collection and Launch Your Own Brand</li>
+                        <li class="list-group-item">Etc.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <!-- Latest Trends Section -->
+        <section class="latest-trends">
+            <h2 class="text-muted">Latest Trends</h2>
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/Trends.png' %}" class="card-img-top h-50" alt="...">
+                <div class="card-body">
+                    <p class="card-text"> Showcasing fashion trends and wellness tips.</p>
+                </div>
+            </div>
+
+        </section>
+        </section>
+    </main>
+</div>
+{% endblock content %}

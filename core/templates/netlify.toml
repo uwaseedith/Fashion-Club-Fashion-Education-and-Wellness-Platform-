@@ -1,0 +1,17 @@
+[build]
+  ccommand = "python manage.py collectstatic --noinput"
+  functions = "netlify/functions/"
+
+[[plugins]]
+  package = "@netlify/plugin-functions-core"
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
+
+[[plugins]]
+  package = "netlify-plugin-django"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

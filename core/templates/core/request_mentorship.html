@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <h2>Request Mentorship</h2>
+  <form method="post" action="{% url 'request_mentorship' mentor_id %}">
+    {% csrf_token %}
+    <button type="submit">Request Mentorship</button>
+  </form>
+{% endblock %}

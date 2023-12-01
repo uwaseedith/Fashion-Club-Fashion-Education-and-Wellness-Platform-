@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Mentorship Forum</h2>
+  {% for mentorship in mentorships %}
+    <div>
+      <p>Mentor: {{ mentorship.mentor.username }}</p>
+      <p>Portfolio Review: {{ mentorship.portfolio_review }}</p>
+      <p>Career Advice: {{ mentorship.career_advice }}</p>
+      <p>Requested At: {{ mentorship.created_at }}</p>
+    </div>
+  {% endfor %}
+{% endblock %}

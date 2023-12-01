@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 190px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #1d3030;
+    color:  #ffffe6;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* The navigation menu links */
+.sidebar a {
+    text-decoration: none;
+    color:  #ffffe6;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 210px; /* Same as the width of the sidebar */
+    padding: 20px;
+}
+
+.avatar {
+    width: 80%;
+    border-radius: 10%;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.post img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+.login {
+    opacity: 1;
+    /* top: 20px; */
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.25, 0.265, 0.85);
+    transition-property: transform, opacity, box-shadow, top, left;
+    transition-duration: 0.5s;
+    transform-origin: 161px 100%;
+    transform: rotateX(0deg);
+    position: relative;
+
+    border-top: 10px solid #d8312a;
+    height: 430px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding: 40px 40px 40px 40px;
+    background: #35394a; /* Old browsers */
+    background: -moz-linear-gradient(
+        45deg,
+        #35394a 0%,
+        #1f222e 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        right top,
+        color-stop(0%, #35394a),
+        color-stop(100%, #1f222e)
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+        45deg,
+        #35394a 0%,
+        #1f222e 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+        45deg,
+        #35394a 0%,
+        #1f222e 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(
+        45deg,
+        #35394a 0%,
+        #1f222e 100%
+    ); /* IE10+ */
+    background: linear-gradient(45deg, #35394a 0%, #1f222e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35394a', endColorstr='#1f222e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.login .title {
+    color: rgb(175, 177, 190);
+
+    text-align: left;
+    font-size: 18px;
+}
+.login label {
+    color: rgb(175, 177, 190);
+
+    text-align: left;
+    font-size: 12px;
+}
+.login .form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+.login .form-control {
+    border-radius: 50px;
+    background: transparent;
+    padding: 10px 50px;
+    border: 2px solid #be0101;
+    color: #be0101;
+    /* text-transform: uppercase; */
+    font-size: 11px;
+    transition-property: background, color;
+    transition-duration: 0.2s;
+}
+.login .form-control:hover {
+    color: white;
+    background: #a70b0b;
+    cursor: pointer;
+    transition-property: background, color;
+    transition-duration: 0.2s;
+}
+.login .form-control[type="password"] {
+    color: #f04242 !important;
+}
+.login .form-control[type="text"],
+.login .form-control[type="password"] {
+    color: #afb1be;
+    /* width: 190px; */
+    margin-top: -2px;
+    background: rgb(50, 54, 74);
+    left: 0;
+    padding: 10px 65px;
+    border-top: 2px solid rgb(57, 61, 82);
+    border-bottom: 2px solid rgb(57, 61, 82);
+    border-right: none;
+    border-left: none;
+    outline: none;
+
+    box-shadow: none;
+}
+.login button {
+    color: white;
+    background: #a70b0b;
+    border-color: #a70b0b;
+    border-radius: 25px;
+    padding-right: 28px;
+    padding-left: 28px;
+    cursor: pointer;
+    transition-property: background, color;
+    transition-duration: 0.2s;
+}
+.log-img {
+    height: 200px;
+    width: 500px;
+    background-image: url("/static/img/IBB_Website_banner.jpg");
+    background-size: 100%;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1px solid #a70b0b;
+}
